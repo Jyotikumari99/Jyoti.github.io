@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style2.css">
+<style>
+    body{
+    margin: 0px;
+    padding: 0px;
+    
+    background-image: url('https://wallpapercave.com/wp/wp2714640.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bday{
+            margin-top: 80px;
+            text-align: center;
+            background: linear-gradient(red 0%,blue 110%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent ;
+           -webkit-text-fill-color: mediumblue;
+            font-size: 100px;
+            cursor: pointer;
+            font-family: 'Days One', sans-serif;
+            background-color: mediumblue;
+            text-shadow:3px 2px 6px violet  ;
+           
+    
+        }
+        /*
+        @font-face {
+            font-family: 'Bungee', cursive;;
+            src: url();
+        }*/
+        .name{
+            padding-right: 100px;
+            margin-left: 290px;
+            padding-right: 0px;
+        margin-left: 368px;
+        
+            margin-top: 60px;
+           /* text-align: center;*/
+            background: linear-gradient(red 0%,blue 110%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent ;
+            font-size: 180px;
+            font-family: 'Monoton', cursive;
+    cursor: pointer;
+            display: inline-block;
+            
+        }
+        .name:hover{
+            -webkit-box-reflect: below ;
+        }
+        .wrapper{
+            position: relative;
+            width: 320px;
+            margin: 230px auto;
+            perspective: 1000px;
+            margin-bottom: 500px;
+        }
+        .img-area{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: rotateY(-360deg) translateZ(-300px);
+            animation: animate 25s steps(1000, end) infinite;
+        }
+        .single-img{
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 10px;
+            left: 10px;
+    
+        }
+        .single-img img
+        {
+            width: 300px;
+            height: 200px;
+            border: 5px solid white; 
+        }
+        .single-img.img-seven{
+    transform: rotateY(0deg) translateZ(300px);
+        }
+        .single-img.img-two{
+    transform: rotateY(60deg) translateZ(300px);
+        }
+        .single-img.img-three{
+    transform: rotateY(120deg) translateZ(300px);
+        }
+        .single-img.img-four{
+    transform: rotateY(180deg) translateZ(300px);
+        }
+        .single-img.img-five{
+    transform: rotateY(240deg) translateZ(300px);
+        }
+        .single-img.img-six{
+    transform: rotateY(300deg) translateZ(300px);
+        }
+        img{
+            /*filter: grayscale(90%);
+            transition: 1s;*/
+            cursor: pointer;
+        }
+        img:hover{
+           /* transition: 1s;
+            filter: grayscale(0) ;*/
+        }
+        @keyframes animate{
+            from{
+                transform: rotateY(-360deg);
+            }
+            to{
+                transform: rotateY(0deg);
+            }
+        }
+</style>
+  
+</head>
+<body>
+    <div class="bday">
+        HAPPY BIRTHDAY
+    </div>
+    <div class="name">
+       jyoti
+    </div>
+    <div class="wrapper">
+        <div class="img-area">
+            
+            <div class="single-img img-two">
+                <img src="https://wallpaperaccess.com/full/5063862.jpg" alt="" srcset="">
+                
+            </div>
+            <div class="single-img img-three">
+                <img src="https://cdn.guidingtech.com/imager/assets/190747/Beautiful-HD-Birds-Wallpapers-Download_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524142273" alt="" srcset="">
+            </div>
+            <div class="single-img img-four">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXubsnqCIN0zFgxuJ7Vu0vVNXWgLMvXpakG8Kow2QHNOUbC58DB-khyJ2MjuS4GUrljw&usqp=CAU" alt="" srcset="">
+            </div>
+            <div class="single-img img-five">
+                <img src="https://thumbs.dreamstime.com/b/christmas-background-magic-glowing-snowflakes-winter-nature-landscape-beautiful-scene-bokeh-fairytale-illuminated-lights-154691551.jpg" alt="" srcset="">
+            </div>
+            <div class="single-img img-six">
+                <img src="https://i.ytimg.com/vi/p7TDpx0hsn4/maxresdefault.jpg" alt="" srcset="">
+            </div>
+            <div class="single-img img-seven">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqXkXj7So7YRBTy8JTiN_sVu8zCY1N2m-14A&usqp=CAU" alt="" srcset="">
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
