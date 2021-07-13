@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+/*css variables*/
+:root{
+    --navbar-height:59px
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* navigationbar:logo and images*/
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    width: 59px;
+    margin: 3px 6px;
+    clip-path: circle(50% at 50% 50%);
+}
+/** navigationbar:list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Odibee Sans', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.96;
+}
+#navbar ul li{
+    color: rgb(255, 227, 220);
+    list-style-type:none;
+    font-size: 25px;
+/*padding: 10px;*/
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all  1s  ease-in-out;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    transform: translate3d(45);
+   
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(https://i1.wp.com/www.eatthis.com/wp-content/uploads/2020/10/fast-food.jpg?fit=100%2C879&ssl=1) no-repeat center center/cover;
+   background: url(https://t3.ftcdn.net/jpg/03/14/27/32/360_F_314273279_isVcyAZTDbcbBTjGeDC8mepN3Gmdt2mS.jpg) no-repeat center center/cover;
+
+
+   height: 630px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Aclonica', sans-serif;
+}
+/*utility class to style h1*/
+.h-primary{
+   color: rgb(35, 36, 36);
+    font-size: 3.8rem;
+    padding: 6px;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 3px;
+    
+    
+
+}
+.h-primary:hover{
+    text-shadow:3px 2px 5px hotpink;
+}
+.h-secondary{
+    font-family: 'Odibee Sans', cursive;
+    color: rgb(20, 19, 19);
+    font-size: 2.3rem;
+    padding: 12px;
+    letter-spacing: 3px;
+   
+}
+.btn{
+    
+    padding: 6px 20px;border: 2px solid white;
+    background-color: turquoise;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Aclonica', sans-serif;
+    cursor: pointer;
+    animation: bouncing 0.5s ease 0s infinite alternate both;
+           /* animation:  linear 1s ease infinite running slidein;*/
+          
+            
+            display: inline-block;
+            font-weight: 300;
+            
+            
+            position: relative;
+            text-decoration: none;
+            
+           
+}
+@keyframes bouncing{
+            0%{
+bottom: 0;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);/*tranpaprency is 0.5*/
+
+            }
+            100%{
+
+          
+            bottom: 27px;
+            box-shadow: 0 50px 50px rgba(0,0,0.1);/*jaise jaise uapr jayega shadow kam ho rahi hai black color fade hoga*/
+        }
+        
+        }
+.btn:hover{
+    background-color: tomato;
+}
+/*services section*/
+#services{
+   /* margin: 134px 0px 0px ;*/
+   /*margin: 34px;*/
+   margin-top: 10px;
+   
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+#services .box{
+    border: 2px solid rgb(13, 14, 14);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background-color: rgb(219, 216, 216);
+}
+#services .box:hover{
+    box-shadow:7px 5px 10px rgb(88, 226, 250);
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+.center{
+    text-align: center;
+}
+#services .box p{
+    font-family: 'Aclonica', sans-serif;
+}
+/*client section*/
+#client-section{
+height: 344px;
+margin-top: 25px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+    transition: all  1s  ease-in-out;
+}
+#clients img:hover{
+    transform: rotate(360deg);
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+ position: absolute;
+    background: url(https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg)no-repeat center center/cover;
+    width: 100%;
+ height: 48%;
+ z-index: -1;
+ opacity: 0.5;
+}
+/*contact section*/
+#contact{
+position: relative;
+}
+#contact::before{
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.7;
+background: url(https://webinartagency.it/wp-content/uploads/2018/10/contact-background-images-9.jpg)no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea
+{
+    width: 100%;
+    padding: .5rem;
+    padding: 9px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Odibee Sans', cursive;
+
+}
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfr-PUdAUTnGXclhwMxTr6Mri6OffYIPB6A&usqp=CAU" alt="" srcset="">
+        </div>
+        <ul>
+           <li class="item"><a href="#">Home</a></li>
+           <li class="item"><a href="#">Services</a></li>
+           <li class="item"><a href="#">About us</a></li>
+           <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+     
+        <h1 class="h-primary"> Welcome TO Yummy Food Factory</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, magni perspiciatis.</p>
+           
+            <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+<h1 class="h-primary center">Our Services</h1>
+<div id="services">
+    <div class="box">
+        <img src="https://www.freepnglogos.com/uploads/pizza-png/cafe-jungle-madness-pizza-3.png" alt="" srcset="">
+        <h2 class="h-secondary center">Food Ordering</h2>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ducimus ut fugit dignissimos eius doloremque, quo ab ipsa amet! Eveniet facilis eius quidem tempore, beatae nisi obcaecati nihil accusamus rerum.</p>
+    </div>
+    
+        <div class="box">
+            <img src="https://freepngimg.com/thumb/sweets/4-2-sweets-transparent-thumb.png" alt="" srcset="">
+            <h2 class="h-secondary center">Food Catering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ducimus ut fugit dignissimos eius doloremque, quo ab ipsa amet! Eveniet facilis eius quidem tempore, beatae nisi obcaecati nihil accusamus rerum.</p>
+        </div>
+        
+            <div class="box">
+                <img src="https://www.freepnglogos.com/uploads/donut-png/donut-delivery-your-home-business-order-online-22.png" alt="" srcset="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ducimus ut fugit dignissimos eius doloremque, quo ab ipsa amet! Eveniet facilis eius quidem tempore, beatae nisi obcaecati nihil accusamus rerum.</p>
+            </div>
+</div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/microsoft-windows-logo-png-images-30.png" alt="our client" srcset="">
+                
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-0.png" alt="ourclients" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/history-google-logo-png-transparent-8.png" alt="ourclients" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/intel-png-logo/intel-hd-graphics-boost-performance-png-logo-2.png" alt="ourclients" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/original-samsung-logo-10.png" alt="ourclients" srcset="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                
+                <div class="form-group">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name Here">
+                </div>
+            
+
+                <div class="form-group">
+                    
+                    <label for="number">Phone Number:</label>
+                    <input type="number" name="number" id="number" placeholder="Enter Your mobile number Here">
+               
+                </div>
+          
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Here">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright&copy;www.myonlinemeal.com.All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
